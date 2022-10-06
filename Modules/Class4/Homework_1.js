@@ -22,6 +22,19 @@
  * 
  */
 
+//Conversion Fahrenheit to Celsius
+var fahrenheitTemp = 95;
+var fahrenheitToCelsius = (fahrenheitTemp - 32) * 5/9;
+var roundedValue = fahrenheitToCelsius.toFixed(2);
+console.log(`\n${fahrenheitTemp}°F equals to ${roundedValue}°C`);
+
+//Conversion Fahrenheit to Kelvin
+var fahrenheitTemp = 69;
+var fahrenheitToKelvin = (fahrenheitTemp - 32) * 5/9 + 273.15;
+var roundedValue = Math.round(fahrenheitToKelvin * 100) / 100;
+console.log(`\n${fahrenheitTemp}°F equals to ${roundedValue}°K`);
+
+
 
 
 //Conversion Celsius to Kelvin
@@ -54,15 +67,4 @@ console.log(`\n${kelvinTemp}°K equals to ${roundedValue}°C`);
 
 
 
-//Conversion Fahrenheit to Celsius
-var fahrenheitTemp = 95;
-var fahrenheitToCelsius = (fahrenheitTemp - 32) * 5/9;
-var roundedValue = fahrenheitToCelsius.toFixed(2);
-console.log(`\n${fahrenheitTemp}°F equals to ${roundedValue}°C`);
 
-
-//FConversion ahrenheit to Kelvin
-var fahrenheitTemp = 69;
-var fahrenheitToKelvin = (fahrenheitTemp - 32) * 5/9 + 273.15;
-var roundedValue = Math.round(fahrenheitToKelvin * 100) / 100;
-console.log(`\n${fahrenheitTemp}°F equals to ${roundedValue}°K`);
