@@ -13,13 +13,13 @@ class Faculty extends Members {
 /* 
 Activities a faculty can perform:
 
-    Functions from parent classes:
+Functions from parent classes:
     -> changeName()
     -> changeAddress()
     -> getProfile()
     -> verificationOfCourseName()
 
-    Specific functions for Faculty-class:
+Specific functions for Faculty-class:
     -> showMySalary
     -> gradeStudent
     -> resignFromInstitute 
@@ -27,8 +27,7 @@ Activities a faculty can perform:
 
 facultyInfo = {
     fDegree: '',
-    fSalary: 0,
-    // fStatus: true, -> resignFromInstitute 
+    fSalary: 0
 }
 
 creationDate = moment(); 
@@ -61,7 +60,6 @@ constructor(age, courseName, name, email, address) {
     }
 }
 
-
 getFacultyProfile(facultyId) {
     if (facultyId == this.fIdNumber) {
         console.log(`\n~~~~~~~ FACULTY MEMBER PROFILE ~~~~~~~\n`);
@@ -88,9 +86,7 @@ try {
     var f1 = new Faculty(43, 'qa', 'Merry Stellar', '123@gmail.com', 'boston MI');
     f1.changeFacultyName('F_001', 'homer SipmsoN');
     f1.getFacultyProfile('F_001');
-    var f2 = new Faculty(32, 'front end', 'Bob Stellar', 'qwert@gmail.com', 'BroKlyN');
-    f2.changeFacultyName('F_002', 'Lisa SipmsoN');
-    f2.getFacultyProfile('F_002');
+    f1.changeAddress('2786 17th St brOOKlyn 11267');
 
 } catch (e) {
     console.log('Sorry, cannot proceed with the enrollment.\nPlease provide needed faculty member data.')

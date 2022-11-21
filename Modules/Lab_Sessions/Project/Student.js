@@ -7,19 +7,17 @@ const Members = require('./Members');
 const moment = require('moment');
 
 
-
 class Student extends Members {
-
 /*  
 Activities a student can perform:
 
-    Functions from parent classes:
+Functions from parent classes:
     -> changeName
     -> changeAddress
     -> getProfile 
     -> verification of course name
 
-    Specific functions for Student-class:
+Specific functions for Student-class:
     -> enrollment -> constructor
     -> changeCourse
     -> makePayment
@@ -30,12 +28,9 @@ creationDate = moment(); // <- decided to implement Moment library to display a 
 studentInfo = {
     sBalance: 0,  
     sStatus: true, 
-    sGrade: '' 
 }
 
 static sIdNumber = 0;
-static sGrade = '';
-
 
 
 // define specific constructor for Student class instead of Enrolment-function
@@ -66,26 +61,6 @@ constructor(age, courseName, name, email, address) {
     }
 }
 
-
-
-
-/* displayStudentProfile(sId) {
-    if (sId == this.sIdNumber) {
-        console.log(`\n\t~~~~~~~~ STUDENT PROFILE ~~~~~~~~
-        Name: ${this.membersInfo.mName}
-        Age: ${this.membersInfo.mAge} 
-        Email: ${this.membersInfo.mEmail}
-        Address: ${this.membersInfo.mAddress}
-        Balance: ${this.studentInfo.sBalance} 
-        Course: ${this.membersInfo.mCourseName} 
-        ID: ${this.sIdNumber}
-        ~~~~~~~~~~~~~~~~~~~~~~~~`);
-    } else {
-        console.log(`Provide a valid ID number.`)
-    }    
-} */
-
-
 getStudentProfile(sId) {
     if (sId == this.sIdNumber) {
         console.log(`\n~~~~~~~ STUDENT PROFILE ~~~~~~~\n`);
@@ -105,7 +80,6 @@ changeStudentName(sId, updatedName) {
         console.log(`Provide a valid ID number.`)
     }  
 } 
-
 
 makePayment(paidAmount) {
     if (this.studentInfo.sBalance > 0) {

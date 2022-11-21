@@ -1,7 +1,6 @@
 //* Group project - due date Nov 20
 //* Ahsan's group -> Polina Howard, Kaan Altinova, Jomy Muttathil, Roman Iskandarov, Ronveer Chakraborty, Preeya Singh, Mashrur Elahi
 
-
 class Helper_Functions {
 
 static nameToTitleCase(sName) {
@@ -12,6 +11,6 @@ static nameToTitleCase(sName) {
         }
     return toTitleCase = toTitleCase.trim();  
 }
-
 }
+
 module.exports = Helper_Functions;

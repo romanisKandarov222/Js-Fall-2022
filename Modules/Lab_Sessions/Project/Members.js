@@ -33,7 +33,6 @@ verificationOfCourse(courseName) {
     return this.membersData.find(cData => cData.course.toUpperCase().localeCompare(courseName.toUpperCase()) === 0);
 }   
 
-
 changeName(updatedName) {
     if (this.membersInfo.mName.toUpperCase().localeCompare(updatedName.toUpperCase()) === 0) {
         console.log(`You are already registered with this name. Registered name: ${this.membersInfo.mName}\n`);
@@ -43,7 +42,6 @@ changeName(updatedName) {
     } 
 }
 
-
 getProfile() {
     console.log(`Name: ${this.membersInfo.mName}
 Age: ${this.membersInfo.mAge} 
@@ -51,7 +49,6 @@ Email: ${this.membersInfo.mEmail}
 Address: ${this.membersInfo.mAddress}
 Course: ${this.membersInfo.mCourseName}`); 
 }
-
 
 changeAddress(updatedAddress) {
     if (this.membersInfo.mAddress.localeCompare(updatedAddress.toUpperCase()) === 0) {
