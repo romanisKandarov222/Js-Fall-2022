@@ -10,7 +10,7 @@
  * 'good Morning' -> 'GM'
  * 'hello dear, how are you doing?' -> HDHAYD
  */
- function abbreviationOfString (userString) {
+function abbreviationOfString (userString) {
     var abbr = userString.toUpperCase().split(' ');
     var newString = '';
     for(var ind = 0; ind < abbr.length; ind++) {

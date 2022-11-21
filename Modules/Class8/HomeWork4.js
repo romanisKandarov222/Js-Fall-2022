@@ -41,7 +41,7 @@ if (sports.includes(lookingValue) && (sports.indexOf(lookingValue) !== 2)) {
 if (planets.indexOf('Earth') == 0) {
     console.log('\nEarth is mentioned in expected index\n');
 } else {
-    updaterdPlanets = planets.unshift('Earth');
+    updatedPlanets = planets.unshift('Earth');
     console.log(`\nUpdated array -> ${planets}\n`);
 }
 
@@ -69,19 +69,19 @@ if (planets.indexOf('Earth') == 0) {
  * (studentScore/maxStore)*100
  * 
  */
-var studentScore = 133;
+var studentScore = 136.48;
 var maxScore = 150;
 var percentage = ((studentScore/maxScore)*100).toFixed(2);
 
 if (percentage >= 91 && percentage <= 100) {
     console.log(`Your percentage is ${percentage}%, and your grade is A`);
-} else if (percentage >= 81 && percentage <= 90.99) {
+} else if (percentage >= 81) {
     console.log(`Your percentage is ${percentage}%, and your grade is B`);
-} else if (percentage >= 71 && percentage <= 80.99) {
+} else if (percentage >= 71) {
     console.log(`Your percentage is ${percentage}%, and your grade is C`);
-} else if (percentage >= 61 && percentage <= 70.99) {
+} else if (percentage >= 61) {
     console.log(`Your percentage is ${percentage}%, and your grade is D`);
-} else if (percentage >= 51 && percentage <= 60.99) {
+} else if (percentage >= 51) {
     console.log(`Your percentage is ${percentage}%, and your grade is E`);
 } else if (percentage >= 0 && percentage < 51) {
     console.log(`Your percentage is ${percentage}%, and your grade is F`);
@@ -90,7 +90,7 @@ if (percentage >= 91 && percentage <= 100) {
 }
 
 /**
- * 
+ *      
  * Q4:
  * 
  * Create a variable and store any value in it.
@@ -120,3 +120,31 @@ if (number%5 == 0 || number%3 == 0) {
 } else {
     console.log(`\n${number} is NOT divisible by 5 or 3\n`);
 }
+
+
+
+
+
+
+/* const sports2 = ['Football', 'Soccer', 'Baseball', 'Rugby', 'BASKETBALL', 'Ping pong'];
+for (var i = 1; i < sports2.length; i+=2) {
+    console.log(sports2[i]);
+}  */
+
+
+/* const sports3 = ['Football', 'Soccer', 'Baseball', 'Rugby', 'BASKETBALL', 'Ping pong'];
+for (var ind = 1; ind < sports3.length; ind++) {
+    if (sports3[ind].toLowerCase().includes('o') || sports3[ind].length > 5 && sports3[ind].length < 10) {
+        console.log(sports3[ind]); 
+    }
+}   */
+
+
+const sports4 = ['Football', 'soccer', 'baseball', 'Rugby', 'bASKETBALL', 'Ping pong'];
+let abc = [];
+for (var ind = sports4.length - 1; ind > -1 ; ind--) {
+    var titleCase = sports4[ind].charAt(0).toUpperCase() + sports4[ind].slice(1).toLowerCase();
+        console.log(`${titleCase}`); 
+        abc[sports4.length - 1 - ind] = titleCase;
+} 
+console.log(abc);

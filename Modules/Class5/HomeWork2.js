@@ -16,7 +16,7 @@ console.log(`\n\nresult1 -> ${result1}`);
  */
 
  const sentence2 = 'Pages That you vIeW in tHIs WinDOw wont apPeAr in the broWSer history AND thEY wont LEaVE other TRACes';
- var replacedWithAlpha = sentence2.replaceAll('A', 'Alpha');
+ var replacedWithAlpha = sentence2.replaceAll(/a/ig, 'Alpha');
  console.log(`\n${replacedWithAlpha}`);
 
 
@@ -33,12 +33,11 @@ console.log(`\n${sentence3ToLowerCase}`);
  * 6. word 'BoDy' is present only once. (true or false)
  */
 
-
 console.log(`\nThe lenght of sentence3 -> ${sentence3.length}`);
 console.log(`\n${sentence3ToLowerCase.startsWith('HeAlTh'.toLowerCase())}`);
 console.log(`\n${sentence3ToLowerCase.includes('Body'.toLowerCase())}`);
 console.log(`\n${sentence3ToLowerCase.indexOf('BoDy'.toLowerCase())}`);
-console.log(`\nThe last-character in sentence3 -> ${sentence3.charAt(70)}`);
+console.log(`\nThe last character in sentence3 -> ${sentence3.charAt(sentence3.length-1)}`);
 
 var count = sentence3ToLowerCase.match(/body/g).length;
 var bodyPresenceCount = count == 1 ? 'True. Word "Body" is present only once' : 'False. Word "Body" is present more than once' 

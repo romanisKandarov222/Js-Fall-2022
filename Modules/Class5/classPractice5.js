@@ -13,4 +13,15 @@ console.log(`Index of 'w' -> ${phraseWithLowerCases}`);
 
 var roomTemp = 66;
 var heatStatus = roomTemp <= 65 ? 'Turn on heater' : 'Do not need a heater';
-console.log(heatStatus);       
+console.log(heatStatus);  
+
+
+
+/**
+ * print the last character of the string using substring
+ * 
+ * let sentence = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
+ */
+var sentence = 'HeAlTh wAs EArlIer said To Be the  of the bOd WElL';
+var lastCharacter = sentence.substring(sentence.length - 1);
+console.log(`Last character of the sentence -> ${lastCharacter}`)

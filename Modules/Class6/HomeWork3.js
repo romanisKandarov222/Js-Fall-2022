@@ -36,36 +36,24 @@
  
 
  /**
-  * Q4: Convert the string value in to Titlecase
+  * Q4: Convert the string value in to TitleCase
   * 
   * 'you live Only once' -> You Live Only Once
   * 'you Never waLK ALONe' -> You Never Walk Alone
   * 'have a GrEAT daY' -> 'Have A Great Day'
   */
  const sentence4 = 'you Never waLK ALONe';
- let sentence4_Titlecase = '';
- sentence4_Titlecase = sentence4.toLowerCase().split(' ');
- var toUpperCase_0 = sentence4_Titlecase[0].slice(0,1).toUpperCase().concat(sentence4_Titlecase[0].slice(1,50));
- var toUpperCase_1 = sentence4_Titlecase[1].slice(0,1).toUpperCase().concat(sentence4_Titlecase[1].slice(1,50));
- var toUpperCase_2 = sentence4_Titlecase[2].slice(0,1).toUpperCase().concat(sentence4_Titlecase[2].slice(1,50));
- var toUpperCase_3 = sentence4_Titlecase[3].slice(0,1).toUpperCase().concat(sentence4_Titlecase[3].slice(1,50));
- /*  var k_count = 0;
- var n_count = 0;
- while (k_count < sentence4_Titlecase.length && n_count < sentence4_Titlecase.length) {
- var firstCharacter = sentence4_Titlecase[k_count++].slice(0,1).toUpperCase();
- var remainingCharacters = sentence4_Titlecase[n_count++].slice(1,20);
- process.stdout.write(`${firstCharacter.concat(remainingCharacters)} `); }
- console.log('\n') */
- console.log(`Q4: Converted sentence4 -> ${toUpperCase_0.concat(' ' + toUpperCase_1, ' ' + toUpperCase_2, ' ' + toUpperCase_3)}`);
+ let sentence4_TitleCase = sentence4.toLowerCase().split(' ');
+ var toTitleCase = '';
+ /* var toUpperCase_0 = sentence4_TitleCase[0].slice(0,1).toUpperCase().concat(sentence4_TitleCase[0].slice(1));
+ var toUpperCase_1 = sentence4_TitleCase[1].slice(0,1).toUpperCase().concat(sentence4_TitleCase[1].slice(1));
+ var toUpperCase_2 = sentence4_TitleCase[2].slice(0,1).toUpperCase().concat(sentence4_TitleCase[2].slice(1));
+ var toUpperCase_3 = sentence4_TitleCase[3].slice(0,1).toUpperCase().concat(sentence4_TitleCase[3].slice(1)); */
+ for(var i = 0; i < sentence4_TitleCase.length; i++) {
+    toTitleCase += sentence4_TitleCase[i].slice(0,1).toUpperCase().concat(sentence4_TitleCase[i].slice(1)) + ' ';
+ }
+
+ console.log(`Q4: Converted sentence4 -> ${toTitleCase.trim()}`);
      
 
-
-
-
-
-
-
-
-
-
-
+  
